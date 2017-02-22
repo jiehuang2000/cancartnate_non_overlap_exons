@@ -6,7 +6,8 @@
 ### treatment group: healthy cell with SETD2 gene knockedout. 
 
 
-from hg19 bed files of 5’UTRExon, CodingExon, 3’UTRExon, extract all genes with non-overlapped exons, and concatenate all exons
+
+###0. make non-overlaped exon bed file (Exon_bed.sas) from hg19 bed files of 5’UTRExon, CodingExon, 3’UTRExon.
 
 ###1. make the bed file(in zinba format) : /proj/dllab/Jie/Catherine/RNA_seq/GENES_WITH_NON_OVERLAP_EXON.bed
 
