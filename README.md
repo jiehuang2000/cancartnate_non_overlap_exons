@@ -1,8 +1,11 @@
 # cancartnate_non_overlap_exons
 
-Using RNA-seq data
-from hg19 bed files of 5’UTRExon, CodingExon, 3’UTRExon, extract all genes with non-overlapped exons, and concatenate all exons
+## This is an instruction of cancartnate the RNA-seq read depth data for exons from the same gene, and exclude genes with overlaped exons.
 
+### control group: Wild type cell; treatment group: healthy cell with SETD2 gene knockedout. 
+
+
+from hg19 bed files of 5’UTRExon, CodingExon, 3’UTRExon, extract all genes with non-overlapped exons, and concatenate all exons
 
 ###1. make the bed file(in zinba format) : /proj/dllab/Jie/Catherine/RNA_seq/GENES_WITH_NON_OVERLAP_EXON.bed
 
