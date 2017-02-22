@@ -1,6 +1,6 @@
 # cancartnate_non_overlap_exons
 
-## This is an instruction of cancartnate the RNA-seq read depth data for exons from the same gene, and exclude genes with overlaped exons.
+## This is an instruction of cancartnating the RNA-seq read depth data for exons from the same gene, and exclude genes with overlaped exons.
 
 ### control group: Wild type cell; treatment group: healthy cell with SETD2 gene knockedout. 
 
