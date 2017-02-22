@@ -1,10 +1,10 @@
 # cancartnate_non_overlap_exons
 
-
+Using RNA-seq data
 from hg19 bed files of 5’UTRExon, CodingExon, 3’UTRExon, extract all genes with non-overlapped exons, and concatenate all exons
 
 
-1. make the bed file(in zinba format) : /proj/dllab/Jie/Catherine/RNA_seq/GENES_WITH_NON_OVERLAP_EXON.bed
+###1. make the bed file(in zinba format) : /proj/dllab/Jie/Catherine/RNA_seq/GENES_WITH_NON_OVERLAP_EXON.bed
 
 includes exons that are shared by only one gene.
 
@@ -16,7 +16,7 @@ NM_000014_cds_2_0_chr12_9221336_r	chr12	9221335	9221438	- 0
 NM_000014_cds_3_0_chr12_9222341_r	chr12	9222340	9222409	- 0
 
 
-2. from zinba to coord: 
+###2. from zinba to coord: 
 
 library(zinba)
 coord.sbpc(coordfile="BEDFILE_OF_REGIONS.bed", inputfile="SAMPLE_WIG_FILE.wig", outputfile="OUTPUT.coord", twobitfile="/proj/dllab/Catherine/hg19/hg19.2bit")
@@ -27,7 +27,7 @@ mine is: bsub /proj/.test/roach/FAIRE/bin/Rscript /proj/dllab/Jie/Catherine/RNA_
 
 
 
-3. each file is too large, so break down into chromosomes (repeat for each chr):
+###3. each file is too large, so break down into chromosomes (repeat for each chr):
 
 
 grep 'chr21' /proj/dllab/Jie/Catherine/RNA_seq/WT1.coord        > /proj/dllab/Jie/Catherine/RNA_seq/chromosome/ch21_WT1.coord
@@ -36,7 +36,7 @@ grep 'chr21' /proj/dllab/Jie/Catherine/RNA_seq/Setd2_del1.coord > /proj/dllab/Ji
 grep 'chr21' /proj/dllab/Jie/Catherine/RNA_seq/Setd2_del2.coord > /proj/dllab/Jie/Catherine/RNA_seq/chromosome/ch21_Setd2_del2.coord
 
 
-4. fill in NA
+###4. fill in NA
 
 Once done, this needs to be filled in with NA values to make a dataframe. Austin has a script to do this. (can use this to do multiple chromosomes: /proj/dllab/Jie/Catherine/RNA_seq/fill_in_na.R)
 
@@ -47,7 +47,7 @@ bsub perl /proj/dllab/Austin/Scripts/fill_out_uneven_coord.pl /proj/dllab/Jie/Ca
 bsub perl /proj/dllab/Austin/Scripts/fill_out_uneven_coord.pl /proj/dllab/Jie/Catherine/RNA_seq/chromosome/ch21_Setd2_del2.coord /proj/dllab/Jie/Catherine/RNA_seq/chromosome/ch21_Setd2_del2_filledNA.coord
 
 
-5. cancatenate all exons
+###5. cancatenate all exons
 
 /proj/dllab/Jie/Catherine/RNA_seq/merge_exon_coord_LSF.R
 
