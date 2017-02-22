@@ -1,0 +1,6 @@
+library(zinba)
+coord.sbpc(coordfile="/proj/dllab/Jie/Catherine/RNA_seq/GENES_WITH_NON_OVERLAP_EXON.bed", inputfile="/proj/dllab/Catherine/RNASeq/786O/tophat_out/x786O_SETD2_WT_Rep1/x786O_SETD2_WT_Rep1_clean_filt_positionSorted.wig", outputfile="/proj/dllab/Jie/Catherine/RNA_seq/WT1.coord", twobitfile="/proj/dllab/Catherine/hg19/hg19.2bit")
+coord.sbpc(coordfile="/proj/dllab/Jie/Catherine/RNA_seq/GENES_WITH_NON_OVERLAP_EXON.bed", inputfile="/proj/dllab/Catherine/RNASeq/786O/tophat_out/x786O_SETD2_WT_Rep2/x786O_SETD2_WT_Rep2_clean_filt_positionSorted.wig", outputfile="/proj/dllab/Jie/Catherine/RNA_seq/WT2.coord", twobitfile="/proj/dllab/Catherine/hg19/hg19.2bit")
+coord.sbpc(coordfile="/proj/dllab/Jie/Catherine/RNA_seq/GENES_WITH_NON_OVERLAP_EXON.bed", inputfile="/proj/dllab/Catherine/RNASeq/786O/tophat_out/x786O_SETD2_KO_Rep1/x786O_SETD2_KO_Rep1_clean_filt_positionSorted.wig", outputfile="/proj/dllab/Jie/Catherine/RNA_seq/Setd2_del1.coord", twobitfile="/proj/dllab/Catherine/hg19/hg19.2bit")
+coord.sbpc(coordfile="/proj/dllab/Jie/Catherine/RNA_seq/GENES_WITH_NON_OVERLAP_EXON.bed", inputfile="/proj/dllab/Catherine/RNASeq/786O/tophat_out/x786O_SETD2_KO_Rep2/x786O_SETD2_KO_Rep2_clean_filt_positionSorted.wig", outputfile="/proj/dllab/Jie/Catherine/RNA_seq/Setd2_del2.coord", twobitfile="/proj/dllab/Catherine/hg19/hg19.2bit")
+
